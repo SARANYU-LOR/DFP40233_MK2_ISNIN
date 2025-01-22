@@ -49,6 +49,8 @@ Partial Class Form1
         BtnRead = New Button()
         BtnUpdate = New Button()
         BtnDelete = New Button()
+        dtpTarikh = New DateTimePicker()
+        lblTarikh = New Label()
         grbJantina.SuspendLayout()
         grbKaedahbayar.SuspendLayout()
         grbPerisa.SuspendLayout()
@@ -68,7 +70,7 @@ Partial Class Form1
         ' lblNama
         ' 
         lblNama.AutoSize = True
-        lblNama.Location = New Point(45, 97)
+        lblNama.Location = New Point(81, 99)
         lblNama.Name = "lblNama"
         lblNama.Size = New Size(49, 20)
         lblNama.TabIndex = 1
@@ -76,7 +78,7 @@ Partial Class Form1
         ' 
         ' txtNama
         ' 
-        txtNama.Location = New Point(100, 94)
+        txtNama.Location = New Point(140, 92)
         txtNama.Name = "txtNama"
         txtNama.Size = New Size(255, 27)
         txtNama.TabIndex = 2
@@ -84,7 +86,7 @@ Partial Class Form1
         ' lblTelefon
         ' 
         lblTelefon.AutoSize = True
-        lblTelefon.Location = New Point(12, 150)
+        lblTelefon.Location = New Point(52, 148)
         lblTelefon.Name = "lblTelefon"
         lblTelefon.Size = New Size(85, 20)
         lblTelefon.TabIndex = 3
@@ -92,7 +94,7 @@ Partial Class Form1
         ' 
         ' txtTelefon
         ' 
-        txtTelefon.Location = New Point(100, 147)
+        txtTelefon.Location = New Point(140, 145)
         txtTelefon.Name = "txtTelefon"
         txtTelefon.Size = New Size(255, 27)
         txtTelefon.TabIndex = 4
@@ -100,7 +102,7 @@ Partial Class Form1
         ' lblAlamat
         ' 
         lblAlamat.AutoSize = True
-        lblAlamat.Location = New Point(37, 195)
+        lblAlamat.Location = New Point(77, 193)
         lblAlamat.Name = "lblAlamat"
         lblAlamat.Size = New Size(57, 20)
         lblAlamat.TabIndex = 5
@@ -108,7 +110,7 @@ Partial Class Form1
         ' 
         ' txtAlamat
         ' 
-        txtAlamat.Location = New Point(100, 195)
+        txtAlamat.Location = New Point(140, 193)
         txtAlamat.Multiline = True
         txtAlamat.Name = "txtAlamat"
         txtAlamat.Size = New Size(255, 138)
@@ -117,7 +119,7 @@ Partial Class Form1
         ' lblNegeri
         ' 
         lblNegeri.AutoSize = True
-        lblNegeri.Location = New Point(41, 362)
+        lblNegeri.Location = New Point(81, 360)
         lblNegeri.Name = "lblNegeri"
         lblNegeri.Size = New Size(54, 20)
         lblNegeri.TabIndex = 7
@@ -127,7 +129,7 @@ Partial Class Form1
         ' 
         cobNegeri.FormattingEnabled = True
         cobNegeri.Items.AddRange(New Object() {"Kedah", "Perlis", "Pahang", "Perak", "Melaka", "Pulau Pinang", "Selangor", "Kuala Lumpur", "Sabah", "Sarawak"})
-        cobNegeri.Location = New Point(100, 362)
+        cobNegeri.Location = New Point(140, 360)
         cobNegeri.Name = "cobNegeri"
         cobNegeri.Size = New Size(255, 28)
         cobNegeri.TabIndex = 8
@@ -136,7 +138,7 @@ Partial Class Form1
         ' 
         grbJantina.Controls.Add(rabPerempuan)
         grbJantina.Controls.Add(rabLelaki)
-        grbJantina.Location = New Point(467, 97)
+        grbJantina.Location = New Point(459, 148)
         grbJantina.Name = "grbJantina"
         grbJantina.Size = New Size(321, 73)
         grbJantina.TabIndex = 10
@@ -169,7 +171,7 @@ Partial Class Form1
         ' 
         grbKaedahbayar.Controls.Add(rabCashless)
         grbKaedahbayar.Controls.Add(rabCash)
-        grbKaedahbayar.Location = New Point(467, 195)
+        grbKaedahbayar.Location = New Point(459, 248)
         grbKaedahbayar.Name = "grbKaedahbayar"
         grbKaedahbayar.Size = New Size(321, 69)
         grbKaedahbayar.TabIndex = 11
@@ -213,7 +215,7 @@ Partial Class Form1
         grbPerisa.Controls.Add(chbStrawberry)
         grbPerisa.Controls.Add(chbPisang)
         grbPerisa.Controls.Add(chbCoklat)
-        grbPerisa.Location = New Point(467, 291)
+        grbPerisa.Location = New Point(459, 330)
         grbPerisa.Name = "grbPerisa"
         grbPerisa.Size = New Size(321, 112)
         grbPerisa.TabIndex = 13
@@ -244,10 +246,10 @@ Partial Class Form1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3})
-        DataGridView1.Location = New Point(12, 409)
+        DataGridView1.Location = New Point(221, 459)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(432, 155)
+        DataGridView1.Size = New Size(428, 106)
         DataGridView1.TabIndex = 14
         ' 
         ' Column1
@@ -273,7 +275,7 @@ Partial Class Form1
         ' 
         ' BtnCreate
         ' 
-        BtnCreate.Location = New Point(555, 435)
+        BtnCreate.Location = New Point(100, 582)
         BtnCreate.Name = "BtnCreate"
         BtnCreate.Size = New Size(94, 29)
         BtnCreate.TabIndex = 15
@@ -282,7 +284,7 @@ Partial Class Form1
         ' 
         ' BtnRead
         ' 
-        BtnRead.Location = New Point(738, 435)
+        BtnRead.Location = New Point(301, 582)
         BtnRead.Name = "BtnRead"
         BtnRead.Size = New Size(94, 29)
         BtnRead.TabIndex = 16
@@ -291,7 +293,7 @@ Partial Class Form1
         ' 
         ' BtnUpdate
         ' 
-        BtnUpdate.Location = New Point(555, 508)
+        BtnUpdate.Location = New Point(512, 582)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(94, 29)
         BtnUpdate.TabIndex = 17
@@ -300,18 +302,36 @@ Partial Class Form1
         ' 
         ' BtnDelete
         ' 
-        BtnDelete.Location = New Point(738, 508)
+        BtnDelete.Location = New Point(686, 582)
         BtnDelete.Name = "BtnDelete"
         BtnDelete.Size = New Size(94, 29)
         BtnDelete.TabIndex = 18
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
         ' 
+        ' dtpTarikh
+        ' 
+        dtpTarikh.Location = New Point(512, 90)
+        dtpTarikh.Name = "dtpTarikh"
+        dtpTarikh.Size = New Size(250, 27)
+        dtpTarikh.TabIndex = 19
+        ' 
+        ' lblTarikh
+        ' 
+        lblTarikh.AutoSize = True
+        lblTarikh.Location = New Point(459, 95)
+        lblTarikh.Name = "lblTarikh"
+        lblTarikh.Size = New Size(47, 20)
+        lblTarikh.TabIndex = 20
+        lblTarikh.Text = "Tarikh"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(927, 576)
+        ClientSize = New Size(881, 645)
+        Controls.Add(lblTarikh)
+        Controls.Add(dtpTarikh)
         Controls.Add(BtnDelete)
         Controls.Add(BtnUpdate)
         Controls.Add(BtnRead)
@@ -369,5 +389,7 @@ Partial Class Form1
     Friend WithEvents BtnRead As Button
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnDelete As Button
+    Friend WithEvents dtpTarikh As DateTimePicker
+    Friend WithEvents lblTarikh As Label
 
 End Class

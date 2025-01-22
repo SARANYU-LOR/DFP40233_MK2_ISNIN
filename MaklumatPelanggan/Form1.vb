@@ -34,4 +34,14 @@
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles grbPerisa.Enter
 
     End Sub
+
+    Private Sub BtnRead_Click(sender As Object, e As EventArgs) Handles BtnRead.Click
+
+    End Sub
+
+    Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
+        Dim strNama, strALamat, strTelefon As String
+
+
+    End Sub
 End Class
