@@ -42,9 +42,9 @@ Partial Class Form1
         chbStrawberry = New CheckBox()
         chbPisang = New CheckBox()
         DataGridView1 = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
+        clmBill = New DataGridViewTextBoxColumn()
+        clmNama = New DataGridViewTextBoxColumn()
+        clmTelefon = New DataGridViewTextBoxColumn()
         BtnCreate = New Button()
         BtnRead = New Button()
         BtnUpdate = New Button()
@@ -245,33 +245,33 @@ Partial Class Form1
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3})
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {clmBill, clmNama, clmTelefon})
         DataGridView1.Location = New Point(221, 459)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.Size = New Size(428, 106)
         DataGridView1.TabIndex = 14
         ' 
-        ' Column1
+        ' clmBill
         ' 
-        Column1.HeaderText = "Bil"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.Width = 125
+        clmBill.HeaderText = "Bil"
+        clmBill.MinimumWidth = 6
+        clmBill.Name = "clmBill"
+        clmBill.Width = 125
         ' 
-        ' Column2
+        ' clmNama
         ' 
-        Column2.HeaderText = "Nama"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.Width = 125
+        clmNama.HeaderText = "Nama"
+        clmNama.MinimumWidth = 6
+        clmNama.Name = "clmNama"
+        clmNama.Width = 125
         ' 
-        ' Column3
+        ' clmTelefon
         ' 
-        Column3.HeaderText = "No.telefon"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
+        clmTelefon.HeaderText = "No.telefon"
+        clmTelefon.MinimumWidth = 6
+        clmTelefon.Name = "clmTelefon"
+        clmTelefon.Width = 125
         ' 
         ' BtnCreate
         ' 
@@ -382,9 +382,9 @@ Partial Class Form1
     Friend WithEvents chbPisang As CheckBox
     Friend WithEvents chbStrawberry As CheckBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents clmBill As DataGridViewTextBoxColumn
+    Friend WithEvents clmNama As DataGridViewTextBoxColumn
+    Friend WithEvents clmTelefon As DataGridViewTextBoxColumn
     Friend WithEvents BtnCreate As Button
     Friend WithEvents BtnRead As Button
     Friend WithEvents BtnUpdate As Button
