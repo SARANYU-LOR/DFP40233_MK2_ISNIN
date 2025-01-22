@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
+        lblMaklumatpelanggan = New Label()
         lblNama = New Label()
         txtNama = New TextBox()
         lblTelefon = New Label()
@@ -41,7 +41,7 @@ Partial Class Form1
         grbPerisa = New GroupBox()
         chbStrawberry = New CheckBox()
         chbPisang = New CheckBox()
-        DataGridView1 = New DataGridView()
+        dgwJadual = New DataGridView()
         clmBill = New DataGridViewTextBoxColumn()
         clmNama = New DataGridViewTextBoxColumn()
         clmTelefon = New DataGridViewTextBoxColumn()
@@ -54,18 +54,18 @@ Partial Class Form1
         grbJantina.SuspendLayout()
         grbKaedahbayar.SuspendLayout()
         grbPerisa.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgwJadual, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label1
+        ' lblMaklumatpelanggan
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 20F)
-        Label1.Location = New Point(212, 29)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(402, 46)
-        Label1.TabIndex = 0
-        Label1.Text = "MAKLUMAT PELANGGAN"
+        lblMaklumatpelanggan.AutoSize = True
+        lblMaklumatpelanggan.Font = New Font("Segoe UI", 20F)
+        lblMaklumatpelanggan.Location = New Point(212, 29)
+        lblMaklumatpelanggan.Name = "lblMaklumatpelanggan"
+        lblMaklumatpelanggan.Size = New Size(402, 46)
+        lblMaklumatpelanggan.TabIndex = 0
+        lblMaklumatpelanggan.Text = "MAKLUMAT PELANGGAN"
         ' 
         ' lblNama
         ' 
@@ -242,15 +242,15 @@ Partial Class Form1
         chbPisang.Text = "Pisang"
         chbPisang.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView1
+        ' dgwJadual
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {clmBill, clmNama, clmTelefon})
-        DataGridView1.Location = New Point(221, 459)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(428, 106)
-        DataGridView1.TabIndex = 14
+        dgwJadual.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgwJadual.Columns.AddRange(New DataGridViewColumn() {clmBill, clmNama, clmTelefon})
+        dgwJadual.Location = New Point(221, 459)
+        dgwJadual.Name = "dgwJadual"
+        dgwJadual.RowHeadersWidth = 51
+        dgwJadual.Size = New Size(428, 106)
+        dgwJadual.TabIndex = 14
         ' 
         ' clmBill
         ' 
@@ -336,7 +336,7 @@ Partial Class Form1
         Controls.Add(BtnUpdate)
         Controls.Add(BtnRead)
         Controls.Add(BtnCreate)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgwJadual)
         Controls.Add(grbPerisa)
         Controls.Add(grbKaedahbayar)
         Controls.Add(grbJantina)
@@ -348,7 +348,7 @@ Partial Class Form1
         Controls.Add(lblTelefon)
         Controls.Add(txtNama)
         Controls.Add(lblNama)
-        Controls.Add(Label1)
+        Controls.Add(lblMaklumatpelanggan)
         Name = "Form1"
         Text = "Form1"
         grbJantina.ResumeLayout(False)
@@ -357,12 +357,12 @@ Partial Class Form1
         grbKaedahbayar.PerformLayout()
         grbPerisa.ResumeLayout(False)
         grbPerisa.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgwJadual, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblMaklumatpelanggan As Label
     Friend WithEvents lblNama As Label
     Friend WithEvents txtNama As TextBox
     Friend WithEvents lblTelefon As Label
@@ -381,7 +381,7 @@ Partial Class Form1
     Friend WithEvents grbPerisa As GroupBox
     Friend WithEvents chbPisang As CheckBox
     Friend WithEvents chbStrawberry As CheckBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgwJadual As DataGridView
     Friend WithEvents clmBill As DataGridViewTextBoxColumn
     Friend WithEvents clmNama As DataGridViewTextBoxColumn
     Friend WithEvents clmTelefon As DataGridViewTextBoxColumn
